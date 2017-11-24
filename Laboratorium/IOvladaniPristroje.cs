@@ -8,8 +8,8 @@ namespace Laboratorium
 {
     interface IOvladaniPristroje
     {
-        void zapni();
-        void vypni();
+        void Zapni();
+        void Vypni();
         
     }
 }

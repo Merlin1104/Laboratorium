@@ -8,24 +8,26 @@ namespace Laboratorium
 {
     sealed class Mikroskop : Pristroj, IOvladaniPristroje
     {
+
         public override void VypisDetailniInformace()
         {
-            Console.WriteLine("Toto je Mikroskop");
+            base.VypisInformaceOPristroji();
+            Console.WriteLine("Som mikroskop");
+                       
         }
 
-        public override void VypisInformaceOPristroji()
+        public void Zapni ()
         {
-            Console.WriteLine("Cislo pristroja: 1");
+            zapnute = true;
         }
 
-        public void vypni()
+        public void Vypni ()
         {
-            Console.WriteLine("Vypinam pristroj");
+            zapnute = false;
         }
 
-        public void zapni()
-        {
-            Console.WriteLine("Zapinam pristroj");
-        }
+
+        
+        
     }
 }

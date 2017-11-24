@@ -11,17 +11,17 @@ namespace Laboratorium
         class VeduciLaboratoria : Laborator
         {
             private string name;
-            private string surname;
+            //private string surname;
 
             public void VypisMeno()
             {
-                Console.WriteLine("Meno: {0} {1} ",name, surname);
+                Console.WriteLine("Meno: {0} {1} ",name); //surname);
             }
 
-            public VeduciLaboratoria(string name, string surname)
+            public VeduciLaboratoria(string name )//string surname)
             {
                 this.name = name;
-                this.surname = surname;
+                //this.surname = surname;
             }
         }
     }
